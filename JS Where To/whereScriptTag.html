@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where To</title>
+    <script>
+        function myFunction(){
+            document.getElementById("demo").innerHTML = "paragraph Changed";
+        }
+    </script>
+</head>
+<body>
+    <!-- In HTML Js Code insterted between script tag  -->
+    <p id="demo"></p>
+    <!-- JS Function And Event -->
+    <!-- Blok fungsi dari kode js akan dieksekusi ketika dipanggil , biasa terjadi ketika event terjadi seperit klik tombol  -->
+    <!-- JS bisa ditempakan dalam tag head or body -->
+    <!-- JS dengan menggunakan script dalam tag head -->
+    <!-- Using external JS -->
+
+    <button type="button" onclick="myFunction()">Click akan memanggil funciton </button>
+    <button type="button" onclick="myFunction2()">Click akan memanggil funciton2 </button>
+    <button type="button" onclick="myFunction3()">Click akan memanggil funciton3 </button>
+
+    <script>
+        function myFunction2() {
+            document.getElementById("demo").innerHTML = "paragraph changed 2";
+        }
+    </script>
+    <script>document.getElementById("demo").innerHTML = "Tulisan dalam tag p dari js script tag"</script>
+    <script src="myFunction.js"></script>
+</body>
+</html>
