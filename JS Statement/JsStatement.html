@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Statement</title>
+</head>
+<body>
+    <!-- Statement 1: let x, y, z -->
+    <!-- Statement 2: x = 5 -->
+    <!-- Statement 3: y = 6 -->
+    <!-- Statement 4: z = x + y -->
+    <!-- JS Statemtn composed of: Values, Operators, Expression, Keyword, Comments -->
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = "Hello Dolly";
+    </script>
+
+    <!-- Semicolons -->
+    <script>
+        let a, b, c;
+        a = 5;
+        b = 6;
+        c = a + b;
+        document.getElementById("demo").innerHTML = c;
+    </script>
+    <!-- White space, JS Ignore white space so you use white space for more readable code -->
+    <!-- Good practice put space around operators :  = + - * / -->
+    <script>
+        // More readable
+        let person = "Hege"; 
+
+        // No readable
+        let person1="hege";
+    </script>
+
+    <!-- JS Line Length and Line Breaks -->
+    <!-- if more 80 character best readablity -->
+    <script>
+        document.getElementById("demo").innerHTML = 
+        "Hello Line Length";
+    </script>
+
+    <!-- JS Code Block untuk mengelompokan dalam curly bracket -->
+    <!-- Tujuan untuk mengeksekusi bersama -->
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <button onclick="myFunction()">Click me</button>
+    <script>
+        function myFunction(){
+            document.getElementById("demo1").innerHTML = "Hello Demo 1";
+            document.getElementById("demo2").innerHTML = "Hello Demo 2";
+        }
+    </script>
+    
+</body>
+</html>
